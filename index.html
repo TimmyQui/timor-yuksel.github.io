@@ -1,0 +1,263 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <meta name="color-scheme" content="dark"/>
+  <title>Timor Yüksel — Portfolio</title>
+  <link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&family=JetBrains+Mono:wght@300;400;500;600&display=swap" rel="stylesheet"/>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/devicon.min.css"/>
+  <link rel="stylesheet" href="css/main.css"/>
+</head>
+<body>
+
+<!-- NAV -->
+<nav>
+  <a class="nav-logo" href="index.html">TIMOR.DEV</a>
+  <ul class="nav-links">
+    <li><a href="#about">About</a></li>
+    <li><a href="#skills">Skills</a></li>
+    <li><a href="#projects">Projects</a></li>
+    <li><a href="#experience">Experience</a></li>
+    <li><a href="blog.html">Blog</a></li>
+    <li><a href="#contact" class="nav-cta">Contact</a></li>
+  </ul>
+</nav>
+
+<!-- HERO -->
+<section id="hero">
+  <canvas id="hero-canvas"></canvas>
+  <div class="hero-inner">
+    <div class="hero-tag">Software Engineering Student</div>
+    <div class="hero-name">
+      <div class="line1">Hello, world.</div>
+      <div class="line2">I'm Timor.</div>
+    </div>
+    <p class="hero-desc">
+      Software engineering student at <strong>HvA Amsterdam</strong>, building full-stack projects with Java, Spring Boot, Vue.js and TypeScript. Learning by shipping real things.
+    </p>
+    <div class="hero-btns">
+      <a href="#projects" class="px-btn px-btn-green">▶ MY WORK</a>
+      <a href="#contact" class="px-btn px-btn-outline">✉ CONTACT</a>
+    </div>
+  </div>
+</section>
+
+<div class="dither"></div>
+
+<!-- ABOUT -->
+<section id="about">
+  <div class="wrap">
+    <div class="sec-eyebrow">// ABOUT</div>
+    <div class="about-grid">
+      <div class="reveal">
+        <div class="sec-title">Who I <span>am</span></div>
+        <p class="about-p">I'm <strong>Timor</strong>, a software engineering student at HvA. I enjoy building things end-to-end — from backend APIs to polished frontends.</p>
+        <p class="about-p">My main stack is <strong>Java, Spring Boot, and Vue.js</strong>. I've built a full election platform with those, and also worked on a <strong>Tikkie-like payment app</strong> and a <strong>text-based adventure game</strong> in TypeScript.</p>
+        <p class="about-p">I also did a game development semester where I picked up the basics of <strong>Unity and C#</strong>. Open to internships where I can contribute and grow fast.</p>
+        <div class="trait-list">
+          <div class="trait">Fast learner, slow to give up</div>
+          <div class="trait">Game dev & web dev crossover</div>
+          <div class="trait">Comfortable with version control & agile</div>
+          <div class="trait">Open to internship opportunities</div>
+        </div>
+      </div>
+      <div class="stat-boxes reveal d1">
+        <div class="stat-box">
+          <div class="stat-box-num">3+</div>
+          <div class="stat-box-label">Years building software</div>
+        </div>
+        <div class="stat-box">
+          <div class="stat-box-num">10+</div>
+          <div class="stat-box-label">Projects completed</div>
+        </div>
+        <div class="stat-box">
+          <div class="stat-box-num">4</div>
+          <div class="stat-box-label">Languages in active use</div>
+        </div>
+        <div class="stat-box">
+          <div class="stat-box-num">∞</div>
+          <div class="stat-box-label">Things left to learn</div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<div class="dither"></div>
+
+<!-- SKILLS -->
+<div id="skills">
+  <div class="wrap">
+    <div class="sec-eyebrow">// TECH STACK</div>
+    <div class="sec-title reveal">What I <span>work with</span></div>
+    <div class="skills-grid">
+      <div class="skill-tile reveal">    <i class="devicon-java-plain colored skill-emoji"></i>JAVA</div>
+      <div class="skill-tile reveal d1"> <i class="devicon-spring-plain colored skill-emoji"></i>SPRING BOOT</div>
+      <div class="skill-tile reveal d2"> <i class="devicon-vuejs-plain colored skill-emoji"></i>VUE.JS</div>
+      <div class="skill-tile reveal d3"> <i class="devicon-typescript-plain colored skill-emoji"></i>TYPESCRIPT</div>
+      <div class="skill-tile reveal">    <i class="devicon-mysql-plain colored skill-emoji"></i>MYSQL / JPA</div>
+      <div class="skill-tile reveal d1"> <i class="devicon-git-plain colored skill-emoji"></i>GIT</div>
+      <div class="skill-tile reveal d2"> <i class="devicon-csharp-plain colored skill-emoji"></i>C#</div>
+      <div class="skill-tile reveal d3"> <i class="devicon-jira-plain colored skill-emoji"></i>AGILE / SCRUM</div>
+    </div>
+    <p style="margin-top:16px;font-size:11px;color:var(--muted);">// Agile is a working methodology, not a language — but an important part of how I work.</p>
+  </div>
+</div>
+
+<div class="dither"></div>
+
+<!-- PROJECTS -->
+<section id="projects">
+  <div class="wrap">
+    <div class="sec-eyebrow">// PROJECTS</div>
+    <div class="sec-title reveal">Things I've <span>built</span></div>
+    <div class="proj-grid">
+
+      <div class="proj-card reveal">
+        <i class="devicon-react-original colored proj-icon"></i>
+        <div class="proj-title">RISKR</div>
+        <div class="proj-desc">A trading risk calculator and journal for futures, forex, crypto, and stock traders. Calculate position size, risk/reward, and log your trades in one place.</div>
+        <div class="proj-tags">
+          <span class="ptag ptag-g">REACT</span>
+          <span class="ptag ptag-g">TYPESCRIPT</span>
+          <span class="ptag ptag-p">SUPABASE</span>
+          <span class="ptag ptag-p">ZUSTAND</span>
+        </div>
+        <div class="proj-links"><a href="#">[SOURCE]</a><a href="#">[LIVE]</a></div>
+      </div>
+
+      <div class="proj-card reveal d1">
+        <i class="devicon-nodejs-plain colored proj-icon"></i>
+        <div class="proj-title">STUDY NOTES ORGANIZER</div>
+        <div class="proj-desc">A semi-automatic tool that sorts my scrum and self-study notes. An LLM (Groq API) classifies each note's type with a confidence score. Confident results are filed by sprint and type, and uncertain ones go to a review queue instead of being guessed. Includes a CLI and a web UI.</div>
+        <div class="proj-tags">
+          <span class="ptag ptag-g">NODE.JS</span>
+          <span class="ptag ptag-g">TYPESCRIPT</span>
+          <span class="ptag ptag-p">EXPRESS</span>
+          <span class="ptag ptag-p">LLM API</span>
+        </div>
+        <div class="proj-links"><a href="#">[SOURCE]</a></div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<div class="dither"></div>
+
+<!-- EXPERIENCE -->
+<div id="experience">
+  <div class="wrap">
+    <div class="sec-eyebrow">// EXPERIENCE</div>
+    <div class="sec-title reveal">My <span>journey</span></div>
+    <div class="xp-list">
+
+      <div class="xp-row reveal">
+        <div class="xp-date">SEP 2023<br>→ NOW</div>
+        <div>
+          <div class="xp-role">SOFTWARE ENGINEERING STUDENT</div>
+          <div class="xp-place">Hogeschool van Amsterdam (HvA)</div>
+          <div class="xp-desc">Building full-stack web applications with Java, Spring Boot, Vue.js and TypeScript. Completed projects include an election platform, a payment app, and a text adventure game. Also did a game development semester with Unity and C#.</div>
+        </div>
+      </div>
+
+      <div class="xp-row reveal d1">
+        <div class="xp-date">FEB 2023<br>→ JUL 2023</div>
+        <div>
+          <div class="xp-role">SOFTWARE DEVELOPER INTERN</div>
+          <div class="xp-place">Learn&amp;Earn · Haarlem (Hybrid)</div>
+          <div class="xp-desc">Software development internship focused on building web applications. Worked with HTML, CSS and related frontend technologies.</div>
+        </div>
+      </div>
+
+      <div class="xp-row reveal d2">
+        <div class="xp-date">AUG 2022<br>→ JAN 2023</div>
+        <div>
+          <div class="xp-role">SOFTWARE DEVELOPER INTERN</div>
+          <div class="xp-place">PREMIUMS · Amsterdam</div>
+          <div class="xp-desc">Frontend development internship. Built and styled web interfaces using HTML and CSS.</div>
+        </div>
+      </div>
+
+      <div class="xp-row reveal d3">
+        <div class="xp-date">NOV 2020<br>→ JAN 2021</div>
+        <div>
+          <div class="xp-role">ICT SERVICEDESK INTERN</div>
+          <div class="xp-place">Eekels Technology B.V.</div>
+          <div class="xp-desc">IT helpdesk internship focused on customer-oriented service and first-line technical support.</div>
+        </div>
+      </div>
+
+      <div class="xp-row reveal">
+        <div class="xp-date">AUG 2020<br>→ NOV 2020</div>
+        <div>
+          <div class="xp-role">ICT SERVICEDESK INTERN</div>
+          <div class="xp-place">De Keizer Marine Engineering</div>
+          <div class="xp-desc">IT servicedesk internship with a focus on client-facing support and servicedesk operations.</div>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</div>
+
+<div class="dither"></div>
+
+<!-- CONTACT -->
+<section id="contact">
+  <div class="wrap">
+    <div class="sec-eyebrow">// CONTACT</div>
+    <div class="sec-title reveal">Let's <span>connect</span></div>
+    <div class="contact-grid">
+      <div class="reveal">
+        <p class="contact-p">I'm open to internships, collabs, and interesting projects. Drop me a message — I reply fast.</p>
+        <div class="contact-links">
+          <a href="mailto:timmy@email.com" class="clink">
+            <div class="clink-icon">✉️</div>
+            <div>
+              <div>timmy@email.com</div>
+              <div class="clink-sub">Best way to reach me</div>
+            </div>
+          </a>
+          <a href="#" class="clink">
+            <div class="clink-icon">🐙</div>
+            <div>
+              <div>github.com/timor</div>
+              <div class="clink-sub">See my code</div>
+            </div>
+          </a>
+          <a href="https://www.linkedin.com/in/timor-yuksel/" class="clink">
+            <div class="clink-icon">💼</div>
+            <div>
+              <div>linkedin.com/in/timor-yuksel</div>
+              <div class="clink-sub">Connect professionally</div>
+            </div>
+          </a>
+        </div>
+      </div>
+      <div class="px-form reveal d1">
+        <h3>// SEND MESSAGE</h3>
+        <div class="fg"><label>NAME</label><input type="text" placeholder="Your name"/></div>
+        <div class="fg"><label>EMAIL</label><input type="email" placeholder="your@email.com"/></div>
+        <div class="fg"><label>MESSAGE</label><textarea rows="4" placeholder="What's on your mind?"></textarea></div>
+        <button class="px-btn px-btn-green" style="width:100%;justify-content:center;margin-top:6px;">▶ SEND MESSAGE</button>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- FOOTER -->
+<footer>
+  <div class="footer-logo">TIMOR.DEV</div>
+  <p>© 2026 Timor Yüksel — Built with ♥</p>
+  <div class="footer-links">
+    <a href="#">GitHub</a>
+    <a href="https://www.linkedin.com/in/timor-yuksel/">LinkedIn</a>
+    <a href="mailto:timmy@email.com">Email</a>
+  </div>
+</footer>
+
+<script src="js/main.js"></script>
+</body>
+</html>

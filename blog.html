@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <meta name="color-scheme" content="dark"/>
+  <title>Dark Tech Blog — Timor Yüksel</title>
+  <link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&family=JetBrains+Mono:wght@300;400;500;600&display=swap" rel="stylesheet"/>
+  <link rel="stylesheet" href="css/main.css"/>
+  <link rel="stylesheet" href="css/blog.css"/>
+</head>
+<body>
+
+<!-- NAV -->
+<nav>
+  <a class="nav-logo" href="index.html">TIMOR.DEV</a>
+  <ul class="nav-links">
+    <li><a href="index.html">Home</a></li>
+    <li><a href="index.html#projects">Projects</a></li>
+    <li><a href="index.html#experience">Experience</a></li>
+    <li><a href="index.html#contact" class="nav-cta">Contact</a></li>
+  </ul>
+</nav>
+
+<!-- BLOG HERO (shown on list view) -->
+<div id="blog-list-view">
+  <div class="blog-hero">
+    <div class="sec-eyebrow">// DARK TECH BLOG</div>
+    <div class="sec-title">The stuff <span>they don't tell you</span></div>
+    <p class="blog-hero-sub">A blog about privacy, surveillance, security, and the darker side of technology. Written as part of a school project — but the topics are very real.</p>
+  </div>
+  <div class="blog-wrap">
+    <div class="blog-grid" id="blog-grid">
+      <!-- Posts rendered by blog.js -->
+    </div>
+  </div>
+</div>
+
+<!-- SINGLE POST VIEW (shown when ?post=id is in URL) -->
+<div id="post-view" style="display:none;">
+  <div class="post-wrap" id="post-content">
+    <!-- Post rendered by blog.js -->
+  </div>
+</div>
+
+<!-- FOOTER -->
+<footer>
+  <div class="footer-logo">TIMOR.DEV</div>
+  <p>© 2026 Timor Yüksel — Built with ♥</p>
+  <div class="footer-links">
+    <a href="index.html">Portfolio</a>
+    <a href="https://www.linkedin.com/in/timor-yuksel/">LinkedIn</a>
+  </div>
+</footer>
+
+<script src="js/blog.js"></script>
+<script>
+  // Show single post view if ?post= param is present
+  if (new URLSearchParams(window.location.search).get('post')) {
+    document.getElementById('blog-list-view').style.display = 'none';
+    document.getElementById('post-view').style.display = 'block';
+  }
+</script>
+</body>
+</html>

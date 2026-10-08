@@ -1,0 +1,131 @@
+/* ── BLOG PAGE STYLES ── */
+/* To remove this page: delete blog.html, blog.js, and this file */
+
+.blog-hero {
+  padding: 140px 48px 60px;
+  max-width: 1060px;
+  margin: 0 auto;
+  position: relative;
+  z-index: 1;
+}
+.blog-hero .sec-eyebrow { margin-bottom: 14px; }
+.blog-hero .sec-title   { margin-bottom: 12px; }
+.blog-hero-sub {
+  font-size: 14px;
+  color: var(--muted);
+  max-width: 500px;
+  line-height: 1.8;
+}
+
+/* ── BLOG GRID ── */
+.blog-wrap {
+  max-width: 1060px;
+  margin: 0 auto;
+  padding: 20px 48px 100px;
+  position: relative;
+  z-index: 1;
+}
+.blog-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+  gap: 24px;
+}
+
+/* ── BLOG CARD ── */
+.blog-card {
+  padding: 28px;
+  border: 1px solid var(--border-g);
+  background: var(--card);
+  position: relative;
+  transition: transform .2s, border-color .2s, box-shadow .2s;
+  text-decoration: none;
+  color: var(--white);
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+.blog-card::before, .blog-card::after { content: ''; position: absolute; width: 8px; height: 8px; }
+.blog-card::before { top: -1px; left: -1px; border-top: 3px solid var(--green); border-left: 3px solid var(--green); }
+.blog-card::after  { bottom: -1px; right: -1px; border-bottom: 3px solid var(--purple); border-right: 3px solid var(--purple); }
+.blog-card:hover   { transform: translate(-3px,-3px); border-color: rgba(57,255,20,0.4); box-shadow: 3px 3px 0 var(--green-dim); }
+
+.blog-card-date { font-family: var(--pixel); font-size: 6px; color: var(--purple); letter-spacing: 2px; }
+.blog-card-title { font-family: var(--pixel); font-size: 10px; color: var(--green); text-shadow: 0 0 8px var(--green); letter-spacing: 1px; line-height: 1.6; }
+.blog-card-excerpt { font-size: 13px; font-weight: 300; color: #c8d0dc; line-height: 1.8; flex: 1; }
+.blog-card-tag {
+  display: inline-block;
+  font-family: var(--pixel);
+  font-size: 6px;
+  padding: 4px 8px;
+  border: 1px solid var(--green-dim);
+  color: var(--green);
+  letter-spacing: 1px;
+  margin-top: 4px;
+}
+.blog-card-read { font-family: var(--pixel); font-size: 7px; color: var(--muted); letter-spacing: 1px; margin-top: 4px; }
+.blog-card:hover .blog-card-read { color: var(--green); }
+
+/* ── SINGLE POST ── */
+.post-wrap {
+  max-width: 720px;
+  margin: 0 auto;
+  padding: 140px 48px 100px;
+  position: relative;
+  z-index: 1;
+}
+.post-back {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  font-family: var(--pixel);
+  font-size: 7px;
+  color: var(--muted);
+  text-decoration: none;
+  letter-spacing: 2px;
+  margin-bottom: 40px;
+  transition: color .2s;
+}
+.post-back:hover { color: var(--green); }
+.post-date { font-family: var(--pixel); font-size: 7px; color: var(--purple); letter-spacing: 2px; margin-bottom: 16px; }
+.post-title {
+  font-family: var(--pixel);
+  font-size: clamp(16px, 3vw, 26px);
+  color: var(--green);
+  text-shadow: 0 0 12px var(--green);
+  letter-spacing: 1px;
+  line-height: 1.4;
+  margin-bottom: 40px;
+}
+.post-body { font-size: 15px; font-weight: 300; color: #c8d0dc; line-height: 2; }
+.post-body h2 { font-family: var(--pixel); font-size: 12px; color: var(--white); margin: 36px 0 14px; letter-spacing: 1px; }
+.post-body p  { margin-bottom: 18px; }
+.post-body a  { color: var(--green); text-decoration: none; border-bottom: 1px solid var(--green-dim); }
+.post-body a:hover { border-color: var(--green); }
+.post-body code {
+  font-family: var(--mono);
+  font-size: 13px;
+  background: rgba(57,255,20,0.06);
+  border: 1px solid var(--border-g);
+  padding: 2px 8px;
+  color: var(--green);
+}
+.post-body blockquote {
+  border-left: 3px solid var(--purple);
+  padding-left: 20px;
+  color: var(--muted);
+  margin: 24px 0;
+  font-style: italic;
+}
+
+/* ── EMPTY STATE ── */
+.blog-empty {
+  text-align: center;
+  padding: 80px 20px;
+  color: var(--muted);
+}
+.blog-empty-icon { font-size: 48px; margin-bottom: 20px; display: block; }
+.blog-empty p { font-family: var(--pixel); font-size: 8px; letter-spacing: 2px; }
+
+@media (max-width: 720px) {
+  .blog-hero, .blog-wrap, .post-wrap { padding-left: 20px; padding-right: 20px; }
+}
