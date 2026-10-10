@@ -5,6 +5,29 @@
 
 const posts = [
   {
+    id: 2,
+    date: '2026-10-10',
+    title: 'Dark Tech #2: DevLog Sprint 2',
+    excerpt: 'Een terugblik op Sprint 2 van Studio Dark Tech.',
+    tag: 'PRIVACY',
+    body: `
+      <h2>Wat heb ik gedaan in Sprint 2?</h2>
+      <ul>
+        <li></li>
+      </ul>
+
+      <h2>Wat werkte goed en wat niet?</h2>
+      <h3>Goed:</h3>
+      <ul>
+        <li></li>
+      </ul>
+      <h3>Minder goed:</h3>
+      <ul>
+        <li></li>
+      </ul>
+    `
+  },
+  {
     id: 1,
     date: '2026-10-07',
     title: 'Dark Tech #1: DevLog Sprint 1',
@@ -43,11 +66,14 @@ const posts = [
       <img src="images/photobooth2.jpg" alt="Beschrijving" style="max-width:50%;margin:16px 0;">
       <img src="images/photobooth3.jpg" alt="Beschrijving" style="max-width:50%;margin:16px 0;">
       <img src="images/photobooth4.jpg" alt="Beschrijving" style="max-width:50%;margin:16px 0;">
+      <p>De photobooth: een student maakt een leuke foto, maar staat ongemerkt op een weegschaal en de foto wordt opgeslagen en geanalyseerd.</p>
       <h2>Prototype 2</h2>
       <img src="images/rfid1.jpg" alt="Beschrijving" style="max-width:50%;margin:16px 0;">
+      <p>De RFID-scanner: de student scant zijn studentenpas bij het kunstwerk, terwijl er ondertussen data over hem wordt verzameld.</p>
       <h2>Prototype 3</h2>
       <img src="images/cinema1.jpg" alt="Beschrijving" style="max-width:50%;margin:16px 0;">
       <img src="images/cinema2.jpg" alt="Beschrijving" style="max-width:50%;margin:16px 0;">
+      <p>De filminstallatie: een donkere ruimte met een film die normaal lijkt, totdat je eigen gezicht op het scherm verschijnt.</p>
     `
   }
 ];
